@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        
+
         let nome = prompt("Digite seu nome: ");
         let idade = prompt("Digite sua idade: ");
         let notaTecnica = prompt("Digite sua nota na prova técnica: (0, 10)");
@@ -19,10 +19,11 @@
             alert("Infelizmente, " + nome + ", sua pontuação na prova técnica foi insuficiente.")
         } else if (notaEntrevista <= 6) {
             alert("Infelizmente, " + nome + ", sua pontuação na entrevista foi insuficiente.")
+        } else if ((Number(notaEntrevista) + Number(notaTecnica)) / 2 <= 10) {
+            alert ("Parabéns, " + nome + ", você foi aprovado e é altamente qualificado!")
         } else if (idade == Number(18) && notaTecnica >= 7 && notaEntrevista >= 6) {
             alert("Parabéns, " + nome + ", você foi aprovado!")
-        }
-
+        } 
     </script>
 </body>
 </html>
