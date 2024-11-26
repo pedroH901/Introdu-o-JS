@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<style>
+    .oculto {
+        display: none;
+    }
+    .visivel {
+        display: block;
+    }
+</style>
+
+<button id="botao">Ocultar/Mostrar</button>
+<div id="caixa" class="visivel">Este texto será ocultado.</div>
+
+
+    <script>
+        
+// Seleciona os elementos
+const caixa = document.getElementById("caixa");
+const botao = document.getElementById("botao");
+
+// Adiciona um evento de clique no botão
+botao.addEventListener("click", () => {
+    // Verifica se a caixa tem a classe "visivel"
+    if (caixa.classList.contains("visivel")) {
+        // Troca a classe para "oculto"
+        caixa.classList.replace("visivel", "oculto");
+    } else {
+        // Troca a classe para "visivel"
+        caixa.classList.replace("oculto", "visivel");
+    }
+});
+
+
+    </script>
+</body>
+</html>
