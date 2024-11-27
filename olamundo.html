@@ -1,0 +1,21 @@
+<!DOCTYPE html>                                                                          
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo">
+        Olá, Mundo!
+    </h1>
+
+
+
+    <script>
+        nome = prompt("qual seu nome?")
+        document.getElementById("titulo").innerText = "Bem-vindo! " + nome;
+        document.getElementsByTagName("body")[0].innerHTML += "<h2> eu sou um texto adicionado pelo javascript </h2>"
+    </script>
+</body>
+</html>

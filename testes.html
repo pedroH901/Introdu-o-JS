@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+alert("Olá estranho! Qual o seu nome?")
+
+         let nome = prompt("Meu nome é...")
+
+ console.log("O nome do usuário é:" + nome);
+
+
+ alert("Ok " + nome + ", Vamos jogar um jogo! Digite dois números!")
+  let numero1 = prompt("Digite o número 1")
+  let numero2 = prompt("Digite o número 2")
+
+ numero1 = Number(numero1);
+  numero2 = Number(numero2);
+
+ let soma = numero1 + numero2;
+
+ alert("A soma de " + numero1 + " e " + numero2 + " é: " + soma + "!");
+  console.log("Resultado da soma:", soma);
+
+ alert("Agora, quero descobrir sua idade, " + nome + ", Me diga o ano que você nasceu!")
+  let dataAnoAtual = Number(2024);
+  let dataUsuario = prompt("Eu nasci em...")
+
+ dataUsuario = Number(dataUsuario);
+
+ let dataNascimento = dataAnoAtual - dataUsuario;
+
+ console.log("O usuario nasceu em: " + dataUsuario)
+  alert("Seu nome é " + nome + " e você tem " + dataNascimento + " anos!")
+
+ let quantidadeSorvetes = prompt("Você quer quantos sorvetes?")
+  let precoSorvetes = prompt("Qual seria o preço de cada sorvete?")
+  let precoTotal = Number(quantidadeSorvetes) * Number(precoSorvetes)
+  alert("Essa compra daria um total de " + precoTotal);
+
+ let numeroAleatorio = Math.floor(Math.random() * 10) + 1;
+  let numeroAdivinhado = prompt("Estou pensando em um numero de 1 a 10 agora, tente adivinhar!a");
+          if(numeroAleatorio === numeroAdivinhado) {
+                 alert("Você acertou!")
+
+          }
+          else {
+                 alert("Você errou, tente denovo!")
+
+          }
+
+let numero3 = prompt("Digite um número")
+let numero4 = prompt("Digite outro número")
+  alert("Usando minha super inteligência de máquina posso lembrar que você digitou " + numero3 + " e " + numero4)
+
+ let conta = prompt("Agora vamos simular que você está num restaurante, me dê a conta e depois a porcentagem da gorjeta que eu lhe darei o resultado da conta!");
+  let gorjeta = prompt("Agora a gorjeta:");
+  let contaegorjeta = (Number(conta) * Number(gorjeta)) / 100;
+  let total = Number(conta) + contaegorjeta;
+  alert("O total será: " + total)
+
+let numero5 = prompt("Digite um número")
+let numero6 = prompt("Digite outro número")
+  let multiplicacao = numero5 * numero6;
+  alert("Usando minha super inteligência de máquina posso saber que a multiplicação desses valores é " + multiplicacao)
+
+ let nome2 = prompt("Digite seu nome novamente:")
+  let ano2 = prompt("Em que ano estamos?")
+  let adicionarAno = prompt("Adicione quantos anos você quer ir pro futuro!")
+  let futuro = Number(ano2) + Number(adicionarAno);
+  alert(nome2 + " entrou na máquina do tempo e viajou " + adicionarAno + " anos no futuro! Agora ele está em " + futuro + " que incrível!")
+
+ let nota = prompt("Digite uma nota (escolar):");
+  alert("A nota do aluno foi " + nota);
+
+    </script>
+</body>
+<script src="script.js"></script>
+</html>

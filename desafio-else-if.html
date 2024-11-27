@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terceiro desafio JS</title>
+</head>
+<body>
+    <script>
+
+        let nome = prompt("Digite seu nome: ");
+        let idade = prompt("Digite sua idade: ");
+        let notaTecnica = prompt("Digite sua nota na prova técnica: (0, 10)");
+        let notaEntrevista = prompt("Digite sua nota na entrevista: (0, 10)");
+
+        if (idade < Number(18)) {
+            alert("Desculpe " + nome + ", você não atende os critérios de idade.")
+        } else if (notaTecnica <= 7) {
+            alert("Infelizmente, " + nome + ", sua pontuação na prova técnica foi insuficiente.")
+        } else if (notaEntrevista <= 6) {
+            alert("Infelizmente, " + nome + ", sua pontuação na entrevista foi insuficiente.")
+        } else if ((Number(notaEntrevista) + Number(notaTecnica)) / 2 <= 10) {
+            alert ("Parabéns, " + nome + ", você foi aprovado e é altamente qualificado!")
+        } else if (idade == Number(18) && notaTecnica >= 7 && notaEntrevista >= 6) {
+            alert("Parabéns, " + nome + ", você foi aprovado!")
+        } 
+    </script>
+</body>
+</html>
